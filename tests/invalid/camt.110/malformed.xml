@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVALID: Not well-formed XML - missing closing tag for InvstgtnReq (inner element). -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.110.001.01">
+  <InvstgtnReq>
+    <InvstgtnReq>
+      <MsgId>TESTMSG001</MsgId>
+      <RqstrInvstgtnId>RQST001</RqstrInvstgtnId>
+      <EIR>a1b2c3d4-1234-4abc-89ab-1234567890ab</EIR>
+      <InvstgtnTp>
+        <Cd>CCNR</Cd>
+      </InvstgtnTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Undrlyg>
+        <IntrBk>
+          <OrgnlUETR>a1b2c3d4-5678-4abc-89ab-abcdef012345</OrgnlUETR>
+        </IntrBk>
+      </Undrlyg>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>CHASUS33</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>DEUTDEDB</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    <!-- missing </InvstgtnReq> closing tag -->
+    <InvstgtnData>
+      <Rsn>
+        <Cd>NOAS</Cd>
+      </Rsn>
+    </InvstgtnData>
+  </InvstgtnReq>
+</Document>

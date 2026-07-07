@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVALID: InvstgtnData/Rsn/Cd = "OTHR" is not a permitted value for the
+     UTAP Usage Guideline schema, whose ExternalInvestigationReason1Code_fixed
+     restricts Rsn/Cd to the single fixed enumeration "UTAP" (top-level
+     InvstgtnTp is left as "UTAP" so UGDetector still routes to the UTAP
+     binding; only the nested Rsn/Cd violates its fixed enum). The
+     CodeSynthesis cxx-tree parser throws "unexpected enumerator
+     encountered", which XsdBindingImpl classifies as ENUM_VIOLATION.
+     Based on camt.110 UTAP canonical; all else identical. -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.110.001.01">
+  <InvstgtnReq>
+    <InvstgtnReq>
+      <MsgId>UTAP001</MsgId>
+      <RqstrInvstgtnId>RQST050</RqstrInvstgtnId>
+      <EIR>f6a7b8c9-6789-4f01-abcd-678901234ef0</EIR>
+      <InvstgtnTp>
+        <Cd>UTAP</Cd>
+      </InvstgtnTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Undrlyg>
+        <IntrBk>
+          <OrgnlEndToEndId>E2EUTAP001</OrgnlEndToEndId>
+          <OrgnlUETR>f6a7b8c9-0123-4f01-abcd-f01234567890</OrgnlUETR>
+          <OrgnlIntrBkSttlmAmt Ccy="CHF">3200.00000</OrgnlIntrBkSttlmAmt>
+          <OrgnlIntrBkSttlmDt>2026-06-01</OrgnlIntrBkSttlmDt>
+        </IntrBk>
+      </Undrlyg>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>UBSWCHZH</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>CRESCHZZ</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </InvstgtnReq>
+    <InvstgtnData>
+      <Rsn>
+        <Cd>OTHR</Cd>
+      </Rsn>
+    </InvstgtnData>
+  </InvstgtnReq>
+</Document>

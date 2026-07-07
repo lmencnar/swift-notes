@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal canonical camt.111.001.02 OTHR InvestigationResponse for unit testing.
+     Structure:
+       Document / InvstgtnRspn (V02 wrapper)
+         InvstgtnRspn (Response9): MsgId + InvstgtnSts
+         OrgnlInvstgtnReq (Request3): echoed request header -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.111.001.02">
+  <InvstgtnRspn>
+    <InvstgtnRspn>
+      <MsgId>RSPNOTHR001</MsgId>
+      <InvstgtnSts>
+        <Sts>CONF</Sts>
+      </InvstgtnSts>
+    </InvstgtnRspn>
+    <OrgnlInvstgtnReq>
+      <MsgId>OTHR001</MsgId>
+      <RqstrInvstgtnId>RQST010</RqstrInvstgtnId>
+      <EIR>b2c3d4e5-2345-4bcd-9abc-234567890abc</EIR>
+      <InvstgtnTp>
+        <Cd>OTHR</Cd>
+      </InvstgtnTp>
+      <InvstgtnSubTp>
+        <Cd>OTHR</Cd>
+      </InvstgtnSubTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>BOFAUS3N</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>BNPAFRPP</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </OrgnlInvstgtnReq>
+  </InvstgtnRspn>
+</Document>

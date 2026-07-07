@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVALID: <MsgId> element removed from the inner InvestigationRequest2.
+     MsgId is a required element in every UG's InvestigationRequest2__1
+     complex type; the CodeSynthesis cxx-tree parser throws
+     "expected element not encountered", which XsdBindingImpl classifies
+     as MISSING_ELEMENT.
+     Based on camt.110 CCNR_CONR canonical; all else identical. -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.110.001.01">
+  <InvstgtnReq>
+    <InvstgtnReq>
+      <RqstrInvstgtnId>RQST001</RqstrInvstgtnId>
+      <EIR>a1b2c3d4-1234-4abc-89ab-1234567890ab</EIR>
+      <InvstgtnTp>
+        <Cd>CCNR</Cd>
+      </InvstgtnTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Undrlyg>
+        <IntrBk>
+          <OrgnlEndToEndId>E2EREF001</OrgnlEndToEndId>
+          <OrgnlUETR>a1b2c3d4-5678-4abc-89ab-abcdef012345</OrgnlUETR>
+          <OrgnlIntrBkSttlmAmt Ccy="USD">1000.00000</OrgnlIntrBkSttlmAmt>
+          <OrgnlIntrBkSttlmDt>2026-01-15</OrgnlIntrBkSttlmDt>
+        </IntrBk>
+      </Undrlyg>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>CHASUS33</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>DEUTDEDB</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </InvstgtnReq>
+    <InvstgtnData>
+      <Rsn>
+        <Cd>NOAS</Cd>
+      </Rsn>
+    </InvstgtnData>
+  </InvstgtnReq>
+</Document>

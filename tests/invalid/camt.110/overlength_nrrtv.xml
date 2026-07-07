@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVALID: ReqNrrtv is 600 characters, exceeding the 500-char maximum
+     imposed by CASE_RestrictedFINXMax500Text (AdditionalRequestData1Choice__1
+     / ReqNrrtv). The XSD facet is not enforced by the binding-level parse
+     (xml_schema::flags::dont_validate), so RequestMapper's own length
+     invariant check rejects it with LENGTH_VIOLATION.
+     Based on camt.110 OTHR canonical; all else identical. -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.110.001.01">
+  <InvstgtnReq>
+    <InvstgtnReq>
+      <MsgId>OTHR001</MsgId>
+      <RqstrInvstgtnId>RQST010</RqstrInvstgtnId>
+      <EIR>b2c3d4e5-2345-4bcd-9abc-234567890abc</EIR>
+      <InvstgtnTp>
+        <Cd>OTHR</Cd>
+      </InvstgtnTp>
+      <InvstgtnSubTp>
+        <Cd>OTHR</Cd>
+      </InvstgtnSubTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Undrlyg>
+        <IntrBk>
+          <OrgnlEndToEndId>E2EOTHR001</OrgnlEndToEndId>
+          <OrgnlUETR>b2c3d4e5-6789-4bcd-9abc-bcdef0123456</OrgnlUETR>
+          <OrgnlIntrBkSttlmAmt Ccy="EUR">2500.00000</OrgnlIntrBkSttlmAmt>
+          <OrgnlIntrBkSttlmDt>2026-02-10</OrgnlIntrBkSttlmDt>
+        </IntrBk>
+      </Undrlyg>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>BOFAUS3N</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>BNPAFRPP</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </InvstgtnReq>
+    <InvstgtnData>
+      <Rsn>
+        <Cd>NARR</Cd>
+      </Rsn>
+      <AddtlReqData>
+        <ReqNrrtv>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</ReqNrrtv>
+      </AddtlReqData>
+    </InvstgtnData>
+  </InvstgtnReq>
+</Document>

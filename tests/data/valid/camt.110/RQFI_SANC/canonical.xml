@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal canonical camt.110.001.01 RQFI_SANC InvestigationRequest for unit testing.
+     Structure: Document / InvstgtnReq (V01) / InvstgtnReq (Req2) + InvstgtnData -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.110.001.01">
+  <InvstgtnReq>
+    <InvstgtnReq>
+      <MsgId>RQFISANC001</MsgId>
+      <RqstrInvstgtnId>RQST030</RqstrInvstgtnId>
+      <EIR>d4e5f6a7-4567-4def-abcd-456789012cde</EIR>
+      <InvstgtnTp>
+        <Cd>RQFI</Cd>
+      </InvstgtnTp>
+      <InvstgtnSubTp>
+        <Cd>SANC</Cd>
+      </InvstgtnSubTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Undrlyg>
+        <IntrBk>
+          <OrgnlEndToEndId>E2ESANC001</OrgnlEndToEndId>
+          <OrgnlUETR>d4e5f6a7-8901-4def-abcd-def012345678</OrgnlUETR>
+          <OrgnlIntrBkSttlmAmt Ccy="GBP">8750.00000</OrgnlIntrBkSttlmAmt>
+          <OrgnlIntrBkSttlmDt>2026-04-12</OrgnlIntrBkSttlmDt>
+        </IntrBk>
+      </Undrlyg>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>BARCGB22</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>HSBCGB2L</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </InvstgtnReq>
+    <InvstgtnData>
+      <Seq>1</Seq>
+      <Rsn>
+        <Cd>NOAS</Cd>
+      </Rsn>
+    </InvstgtnData>
+  </InvstgtnReq>
+</Document>

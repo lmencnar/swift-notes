@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal canonical camt.110.001.01 UTAP InvestigationRequest for unit testing.
+     Structure: Document / InvstgtnReq (V01) / InvstgtnReq (Req2) + InvstgtnData
+     Note: UTAP has no InvstgtnSubTp per XSD -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.110.001.01">
+  <InvstgtnReq>
+    <InvstgtnReq>
+      <MsgId>UTAP001</MsgId>
+      <RqstrInvstgtnId>RQST050</RqstrInvstgtnId>
+      <EIR>f6a7b8c9-6789-4f01-abcd-678901234ef0</EIR>
+      <InvstgtnTp>
+        <Cd>UTAP</Cd>
+      </InvstgtnTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Undrlyg>
+        <IntrBk>
+          <OrgnlEndToEndId>E2EUTAP001</OrgnlEndToEndId>
+          <OrgnlUETR>f6a7b8c9-0123-4f01-abcd-f01234567890</OrgnlUETR>
+          <OrgnlIntrBkSttlmAmt Ccy="CHF">3200.00000</OrgnlIntrBkSttlmAmt>
+          <OrgnlIntrBkSttlmDt>2026-06-01</OrgnlIntrBkSttlmDt>
+        </IntrBk>
+      </Undrlyg>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>UBSWCHZH</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>CRESCHZZ</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </InvstgtnReq>
+    <InvstgtnData>
+      <Rsn>
+        <Cd>UTAP</Cd>
+      </Rsn>
+    </InvstgtnData>
+  </InvstgtnReq>
+</Document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal canonical camt.111.001.02 RQFI_SANC InvestigationResponse for unit testing.
+     Structure:
+       Document / InvstgtnRspn (V02 wrapper)
+         InvstgtnRspn (Response9): MsgId + InvstgtnSts
+         OrgnlInvstgtnReq (Request3): echoed request header -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.111.001.02">
+  <InvstgtnRspn>
+    <InvstgtnRspn>
+      <MsgId>RSPNSANC001</MsgId>
+      <InvstgtnSts>
+        <Sts>CONF</Sts>
+      </InvstgtnSts>
+    </InvstgtnRspn>
+    <OrgnlInvstgtnReq>
+      <MsgId>RQFISANC001</MsgId>
+      <RqstrInvstgtnId>RQST030</RqstrInvstgtnId>
+      <EIR>d4e5f6a7-4567-4def-abcd-456789012cde</EIR>
+      <InvstgtnTp>
+        <Cd>RQFI</Cd>
+      </InvstgtnTp>
+      <InvstgtnSubTp>
+        <Cd>SANC</Cd>
+      </InvstgtnSubTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>BARCGB22</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>HSBCGB2L</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </OrgnlInvstgtnReq>
+  </InvstgtnRspn>
+</Document>

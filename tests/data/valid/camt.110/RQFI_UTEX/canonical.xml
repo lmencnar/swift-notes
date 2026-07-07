@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal canonical camt.110.001.01 RQFI_UTEX InvestigationRequest for unit testing.
+     Structure: Document / InvstgtnReq (V01) / InvstgtnReq (Req2) + InvstgtnData -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.110.001.01">
+  <InvstgtnReq>
+    <InvstgtnReq>
+      <MsgId>RQFIUTEX001</MsgId>
+      <RqstrInvstgtnId>RQST040</RqstrInvstgtnId>
+      <EIR>e5f6a7b8-5678-4ef0-abcd-567890123def</EIR>
+      <InvstgtnTp>
+        <Cd>RQFI</Cd>
+      </InvstgtnTp>
+      <InvstgtnSubTp>
+        <Cd>UTEX</Cd>
+      </InvstgtnSubTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Undrlyg>
+        <IntrBk>
+          <OrgnlEndToEndId>E2EUTEX001</OrgnlEndToEndId>
+          <OrgnlUETR>e5f6a7b8-9012-4ef0-abcd-ef0123456789</OrgnlUETR>
+          <OrgnlIntrBkSttlmAmt Ccy="JPY">500000.00000</OrgnlIntrBkSttlmAmt>
+          <OrgnlIntrBkSttlmDt>2026-05-20</OrgnlIntrBkSttlmDt>
+        </IntrBk>
+      </Undrlyg>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>MHCBJPJT</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>SMTOJPJT</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </InvstgtnReq>
+    <InvstgtnData>
+      <Seq>1</Seq>
+      <Rsn>
+        <Cd>SEAC</Cd>
+      </Rsn>
+      <RsnSubTp>
+        <Cd>SEAC</Cd>
+      </RsnSubTp>
+    </InvstgtnData>
+  </InvstgtnReq>
+</Document>

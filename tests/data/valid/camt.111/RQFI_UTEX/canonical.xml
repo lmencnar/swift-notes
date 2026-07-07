@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal canonical camt.111.001.02 RQFI_UTEX InvestigationResponse for unit testing.
+     Structure:
+       Document / InvstgtnRspn (V02 wrapper)
+         InvstgtnRspn (Response9): MsgId + InvstgtnSts
+         OrgnlInvstgtnReq (Request3): echoed request header -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.111.001.02">
+  <InvstgtnRspn>
+    <InvstgtnRspn>
+      <MsgId>RSPNUTEX001</MsgId>
+      <InvstgtnSts>
+        <Sts>CONF</Sts>
+      </InvstgtnSts>
+    </InvstgtnRspn>
+    <OrgnlInvstgtnReq>
+      <MsgId>RQFIUTEX001</MsgId>
+      <RqstrInvstgtnId>RQST040</RqstrInvstgtnId>
+      <EIR>e5f6a7b8-5678-4ef0-abcd-567890123def</EIR>
+      <InvstgtnTp>
+        <Cd>RQFI</Cd>
+      </InvstgtnTp>
+      <InvstgtnSubTp>
+        <Cd>UTEX</Cd>
+      </InvstgtnSubTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>MHCBJPJT</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>SMTOJPJT</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </OrgnlInvstgtnReq>
+  </InvstgtnRspn>
+</Document>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INVALID: Wrong namespace "urn:wrong:namespace" instead of
+     "urn:iso:std:iso:20022:tech:xsd:camt.111.001.02".
+     UGDetector returns MessageKind::Unknown; XsdValidator rejects with
+     UNKNOWN_UG. -->
+<Document xmlns="urn:wrong:namespace">
+  <InvstgtnRspn>
+    <InvstgtnRspn>
+      <MsgId>RSPNMSG001</MsgId>
+      <InvstgtnSts>
+        <Sts>CONF</Sts>
+      </InvstgtnSts>
+    </InvstgtnRspn>
+    <OrgnlInvstgtnReq>
+      <MsgId>TESTMSG001</MsgId>
+      <RqstrInvstgtnId>RQST001</RqstrInvstgtnId>
+      <EIR>a1b2c3d4-1234-4abc-89ab-1234567890ab</EIR>
+      <InvstgtnTp>
+        <Cd>CCNR</Cd>
+      </InvstgtnTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>CHASUS33</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>DEUTDEDB</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </OrgnlInvstgtnReq>
+  </InvstgtnRspn>
+</Document>

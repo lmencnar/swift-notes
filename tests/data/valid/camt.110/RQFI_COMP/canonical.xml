@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Minimal canonical camt.110.001.01 RQFI_COMP InvestigationRequest for unit testing.
+     Structure: Document / InvstgtnReq (V01) / InvstgtnReq (Req2) + InvstgtnData -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.110.001.01">
+  <InvstgtnReq>
+    <InvstgtnReq>
+      <MsgId>RQFICOMP001</MsgId>
+      <RqstrInvstgtnId>RQST020</RqstrInvstgtnId>
+      <EIR>c3d4e5f6-3456-4cde-abcd-345678901bcd</EIR>
+      <InvstgtnTp>
+        <Cd>RQFI</Cd>
+      </InvstgtnTp>
+      <InvstgtnSubTp>
+        <Cd>COMP</Cd>
+      </InvstgtnSubTp>
+      <UndrlygInstrm>
+        <Cd>CRED</Cd>
+      </UndrlygInstrm>
+      <Undrlyg>
+        <IntrBk>
+          <OrgnlEndToEndId>E2ECOMP001</OrgnlEndToEndId>
+          <OrgnlUETR>c3d4e5f6-7890-4cde-abcd-cdef01234567</OrgnlUETR>
+          <OrgnlIntrBkSttlmAmt Ccy="USD">15000.00000</OrgnlIntrBkSttlmAmt>
+          <OrgnlIntrBkSttlmDt>2026-03-05</OrgnlIntrBkSttlmDt>
+        </IntrBk>
+      </Undrlyg>
+      <Rqstr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>CHASUS33</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rqstr>
+      <Rspndr>
+        <Agt>
+          <FinInstnId>
+            <BICFI>DEUTDEDB</BICFI>
+          </FinInstnId>
+        </Agt>
+      </Rspndr>
+    </InvstgtnReq>
+    <InvstgtnData>
+      <Seq>1</Seq>
+      <Rsn>
+        <Cd>NOAS</Cd>
+      </Rsn>
+    </InvstgtnData>
+  </InvstgtnReq>
+</Document>
